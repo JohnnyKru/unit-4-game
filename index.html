@@ -14,8 +14,7 @@
 <style>
 
 .container{
-  top: 100px;
-    padding: 25px;
+ padding: 25px;
 width: 600px;
 height: 600px;
 background:grey;
@@ -90,21 +89,33 @@ background:grey;
 
 <script>
 
+var xarray=[10 , 5 , 2, 3 ];
+var x ;
+var y ; 
+var z ;
+var i ; 
+
+
 function myfunk() {
-    var x = document.getElementById("dis")
-    x.innerHTML = Math.floor((Math.random() * 100) + 1);
+ x = xarray[Math.floor(Math.random() * xarray.length)];
+  alert("You have " + parseInt(x) + parseInt(y) + parseInt(z)+ parseInt(i) + "  Crystals.");
+  return;
 }
+
 function myfunk1() {
-    var x = document.getElementById("dis")
-    x.innerHTML = Math.floor((Math.random() * 100) + 1);
+    y = xarray[Math.floor(Math.random() * xarray.length)];
+  alert("You have " + parseInt(x) + parseInt(y) + parseInt(z)+ parseInt(i) + "  Crystals.");
+  return;
 }
 function myfunk2() {
-    var x = document.getElementById("dis")
-    x.innerHTML = Math.floor((Math.random() * 100) + 1);
+  z = xarray[Math.floor(Math.random() * xarray.length)];
+  alert("You have " + parseInt(x) + parseInt(y) + parseInt(z)+ parseInt(i) + "  Crystals.");
+  return;
 }
 function myfunk3() {
-    var x = document.getElementById("dis")
-    x.innerHTML = Math.floor((Math.random() * 100) + 1);
+ i = xarray[Math.floor(Math.random() * xarray.length)];
+  alert("You have " + parseInt(x) + parseInt(y) + parseInt(z)+ parseInt(i) + "  Crystals.");
+  return;
 }
 
 
